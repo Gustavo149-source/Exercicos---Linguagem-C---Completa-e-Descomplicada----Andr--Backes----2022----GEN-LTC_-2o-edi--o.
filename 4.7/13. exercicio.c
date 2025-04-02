@@ -28,10 +28,10 @@ int main() {
             if(b == 0) {
                 printf("\nNao e possivel prosseguir com o divisao pois e impossivel dividir algo por zero!\n");
             } else {
-                operacao = a / (float) b;
-                printf("\nResultado: %.2f\n",operacao);
-                con = 1;
+                float divisao = a / (float) b;
+                printf("\nResultado: %.2f\n",divisao);
             }
+            con = 1;
             break;
         case 4:
             operacao = a * b;
