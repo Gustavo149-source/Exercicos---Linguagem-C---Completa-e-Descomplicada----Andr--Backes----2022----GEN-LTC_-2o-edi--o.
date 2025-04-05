@@ -11,8 +11,6 @@ int main() {
     printf("Digite um numero: ");
     scanf("%d",&num);
 
-    int v[num + 1];
-
     printf("\n----------Calculos---------\n\n");
 
     for(i = 1; i <= num; i++) {
@@ -22,8 +20,7 @@ int main() {
             f *= j;
         }
         h = 1 / (float) f;
-        v[i] = f;
-        printf("1 / %d! ---> 1 / %d = %.5f\n", i, f, h);
+        printf("1 / %d! ---> 1 / %d = %.10f\n", i, f, h);
         total += h;
     }
 
@@ -32,7 +29,7 @@ int main() {
         if(i == 1) {
             printf("\ne = ");
         }
-        printf("1 / %d",v[i]);
+        printf("(1 / %d)",i);
         if(i < num) {
             printf(" + ");
         }
