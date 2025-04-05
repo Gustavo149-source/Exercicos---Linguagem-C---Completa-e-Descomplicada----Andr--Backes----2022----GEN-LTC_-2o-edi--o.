@@ -1,0 +1,22 @@
+/*
+2) Crie um programa que leia do teclado seis valores inteiros e em seguida
+mostre na tela os valores lidos na ordem inversa.
+*/
+#include <stdio.h>
+
+int main() {
+    int num[6], i;
+
+    printf("---------Leitura dos valores----------\n\n");
+    for(i = 0; i < 6; i++) {
+        printf("%d Numero: ",i+1);
+        scanf("%d",&num[i]);
+    }
+
+    printf("\n--------Exibicao dos valores----------\n\n");
+    for(i = 0; i < 6; i++) {
+        printf("%d valor digitado: %d\n",6-i, num[5-i]);
+    }
+
+    return 0;
+}
